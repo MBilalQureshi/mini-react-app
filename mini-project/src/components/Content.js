@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import css from './css/Content.module.css'
-import {savedPosts} from '../posts.json'
+import postsData from '../posts.json'
 import PostItems from './PostItems'
 import Loader from './Loader'
 
@@ -10,6 +10,7 @@ export class Content extends Component {
     
       this.state = {
          isLoaded: false,
+         savedPosts: postsData,
       }
     }
 
@@ -27,7 +28,7 @@ export class Content extends Component {
         </div>
         <div className={css.SearchItem}>
           {
-            this.state.isLoaded ? <PostItems savedPosts={savedPosts} /> : <Loader />
+            this.state.isLoaded ? <PostItems savedPosts={this.state.savedPosts} /> : <Loader />
           }
         </div>
       </div>
