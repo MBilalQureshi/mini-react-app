@@ -5,7 +5,7 @@ function PostItems(props) {
     return (
         <div>
             {
-                props.savedPosts.savedPosts.map(post => {
+                props.savedPosts.map(post => {
                     // Extra task destructuring 
                     const { title, name, image, description } = post
                     return <div key={title}>
