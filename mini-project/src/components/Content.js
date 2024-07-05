@@ -24,7 +24,8 @@ export class Content extends Component {
 
   handleChange = (event) => {
     const name = event.target.value
-    const filteredPosts = postsData.savedPosts.filter(post => post.name.toLowerCase().includes(name.toLowerCase()) )
+    // This is where filtering is done and the posts are updated, it's very simple.
+    const filteredPosts = postsData.savedPosts.filter(post => post.name.toLowerCase().includes(name.toLowerCase()))
     this.setState({ posts: filteredPosts})
   }
   render() {
