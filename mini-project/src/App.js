@@ -1,6 +1,7 @@
 import css from './App.module.css';
 import Content from './components/Content';
 import ContentWithHooks from './components/ContentWithHooks';
+import HTTPContent from './components/HTTPContent';
 import NavBarForm from './components/NavBarForm';
 import NavBarSimple from './components/NavBarSimple';
 import Sidebar from './components/Sidebar';
@@ -17,7 +18,11 @@ function App() {
       {/* <Content /> */}
 
       {/* Content as Functional Component with hooks */}
-      <ContentWithHooks />
+      {/* <ContentWithHooks /> */}
+
+      {/* Remaining Content Class component for third time, we'll use www.pixabay.com
+      and axios to make API calls */}
+      <HTTPContent />
     </div>
   );
 }
