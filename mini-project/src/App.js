@@ -1,5 +1,6 @@
 import css from './App.module.css';
 import Content from './components/Content';
+import ContentHooksApi from './components/ContentHooksApi';
 import ContentWithHooks from './components/ContentWithHooks';
 import HTTPContent from './components/HTTPContent';
 import NavBarForm from './components/NavBarForm';
@@ -22,7 +23,10 @@ function App() {
 
       {/* Remaining Content Class component for third time, we'll use www.pixabay.com
       and axios to make API calls */}
-      <HTTPContent />
+      {/* <HTTPContent /> */}
+
+      {/* Covert class component to hooks and change content for last time */}
+      <ContentHooksApi />
     </div>
   );
 }

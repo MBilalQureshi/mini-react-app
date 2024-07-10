@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import css from './css/Content.module.css'
-import postsData from '../posts.json'
 import Loader from './Loader'
 import axios from 'axios'
 import API_KEY from '../secrets'
